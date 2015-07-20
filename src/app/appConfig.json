@@ -1,0 +1,6 @@
+{
+  "moduleDependencies": [
+    "calDesigner",
+    "inputFieldSet"
+  ]
+}
