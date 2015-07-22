@@ -13,7 +13,14 @@ function outputFieldSet() {
 class outputFieldSetController {
 
   constructor($element, $interval, $window, $scope) {
+	this.scope = $scope;
+	  
+  	this.scope.$on('save', this.save);
   }
+
+	save(e) {
+		console.log(e);
+	}
 
 }
 

@@ -13,9 +13,15 @@ function inputFieldSet() {
 class inputFieldSetController {
 
   constructor($element, $interval, $window, $scope) {
-
+	this.scope = $scope;
+	  
+  	this.scope.$on('save', this.save);
   }
 
+	save(e) {
+		console.log(e);
+	}
+	
 }
 
 inputFieldSetController.$inject=['$element', '$interval', '$window', '$scope'];

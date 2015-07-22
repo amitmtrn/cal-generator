@@ -10,16 +10,19 @@ function calDesigner() {
     controller: calDesignerController,
     controllerAs: 'designer',
     template: require('calDesigner/calDesignerDirective.html')
-  }
+  };
 }
 
 class calDesignerController {
 
-  constructor($element, $interval, $window) {
-    
-
+  constructor($scope) {
+    this.scope = $scope;
+  }
+	
+  save() {
+	this.scope.$broadcast('save', this.scope);
   }
 
 }
 
-calDesignerController.$inject=['$element', '$interval', '$window'];
+calDesignerController.$inject=['$scope'];
