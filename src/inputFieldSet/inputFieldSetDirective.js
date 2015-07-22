@@ -6,13 +6,14 @@ function inputFieldSet() {
     restrict: 'E',
     controller: inputFieldSetController,
     controllerAs: 'inputfield',
-    template: require('inputFieldSet/inputFieldSet.html')
-  }
+    template: require('inputFieldSet/inputFieldSetDirective.html')
+  };
 }
 
 class inputFieldSetController {
 
   constructor($element, $interval, $window, $scope) {
+
   }
 
 }
