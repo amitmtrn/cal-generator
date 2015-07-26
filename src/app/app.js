@@ -3,13 +3,14 @@ import 'app/app.less';
 import config from 'app/appConfig.json';
 
 import 'calDesigner/calDesignerDirective';
+import 'calPreviewer/calPreviewerDirective';
 
 
 // register the app module with dependencies
 angular.module('app', config.moduleDependencies)
   // register the app directive
   .directive('app', () => {
-    return {template: require('app/app.html')}
+    return {template: require('app/app.html')};
   });
 
 // kick angular!

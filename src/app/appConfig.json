@@ -2,6 +2,7 @@
   "moduleDependencies": [
     "calDesigner",
     "inputFieldSet",
-    "outputFieldSet"
+    "outputFieldSet",
+    "calPreviewer"
   ]
 }

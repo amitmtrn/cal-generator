@@ -20,6 +20,7 @@ class calDesignerController {
   }
 	
   save() {
+	this.scope.results = undefined;
 	this.scope.$broadcast('save', this.scope);
   }
 

@@ -1,0 +1,3 @@
+<input ng-repeat="input in previewer.temp.inputs" type="text" name="{{input}}" />
+<input ng-repeat="input in previewer.temp.outputs" type="text" name="result{{$index}}" disabled/>
+<button ng-click="previewer.cal()">calculate</button>
