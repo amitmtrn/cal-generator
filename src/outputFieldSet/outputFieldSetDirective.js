@@ -22,8 +22,8 @@ class outputFieldSetController {
 	save(event) {
 		if(!event.targetScope.results) {
 			event.targetScope.results = {
-				input: [],
-				output: []
+				inputs: [],
+				outputs: []
 			};
 		}
 		event.targetScope.results.output.push(this.element[0].querySelector('[name="outputName"]').value);

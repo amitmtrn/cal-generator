@@ -22,8 +22,8 @@ class inputFieldSetController {
 	save(event) {
 		if(!event.targetScope.results) {
 			event.targetScope.results = {
-				input: [],
-				output: []
+				inputs: [],
+				outputs: []
 			};
 		}
 		event.targetScope.results.input.push(this.element[0].querySelector('[name="inputName"]').value);
